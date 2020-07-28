@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag Api</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7aa2201da2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="nav">
+    <div class="nav-items">
+    <h1>Where in the world?</h1>
+    <!-- <h2>Dark Mode</h2> -->
+</div>
+</div>
+
+
+<section>
+    <div id="search-filter" class="search-filter">
+        <form id="form" action="#" onsubmit="searchCountry()">
+            <input id="search" type="" placeholder="Search for a country">
+            <i id="search-icon" class="fas fa-search fa-2x"></i>
+
+
+        </form>
+    <select name="Filter By Region" id = "region">
+        <option value="">Filter By Region</option>
+        <option value = "Africa">Africa</option>
+        <option value = "Americas">Americas</option>
+        <option value = "Asia">Asia</option>
+        <option value = "Europe">Europe</option>
+        <option value = "Oceania">Oceania</option>
+      </select>
+</div>
+<div id="flag-container" class="flag-container">
+</div>
+</section>
+
+<p>Website Created By <a href="Tsio.co.uk">Tsio</a></p>
+
+<div id="detail" class="detail"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
