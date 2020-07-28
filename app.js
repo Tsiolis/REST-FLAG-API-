@@ -18,7 +18,7 @@ function searchCountry() {
                 container.innerHTML +=
                     `
             <div data-name="${i.name}" class="flag">
-            <img data-name="${i.name}" src="${i.flag}">
+            <img alt="${i.name} Flag" data-name="${i.name}" src="${i.flag}">
             <h2 data-name="${i.name}">${i.name}</h2>
             <h3 data-name="${i.name}">Population: <span>${i.population.toLocaleString()}</span></h3>
             <h3 data-name="${i.name}">Region: <span>${i.region}</span></h3>
@@ -38,7 +38,7 @@ function getAllCountries() {
                 container.innerHTML +=
                     `
         <div data-name="${i.name}" class="flag">
-        <img data-name="${i.name}" src="${i.flag}">
+        <img alt="${i.name} Flag" data-name="${i.name}" src="${i.flag}">
         <h2 data-name="${i.name}">${i.name}</h2>
         <h3 data-name="${i.name}">Population: <span>${i.population.toLocaleString()}</span></h3>
         <h3 data-name="${i.name}">Region: <span>${i.region}</span></h3>
@@ -64,7 +64,7 @@ function getByRegion() {
                     container.innerHTML +=
                         `
         <div data-name="${i.name}" class="flag">
-        <img data-name="${i.name}" src="${i.flag}">
+        <img alt="${i.name} Flag" data-name="${i.name}" src="${i.flag}">
         <h2 data-name="${i.name}">${i.name}</h2>
         <h3 data-name="${i.name}">Population: <span>${i.population.toLocaleString()}</span></h3>
         <h3 data-name="${i.name}">Region: <span>${i.region}</span></h3>
@@ -96,7 +96,7 @@ container.addEventListener('click', e => {
         
         <div class="dets-0">
         <button onclick="clearDetail(),getAllCountries()" id="btn">Back</button>
-        <img class="dets-img" src="${i.flag}">
+        <img alt="${i.name} Flag" class="dets-img" src="${i.flag}">
      </div>
         <div class="dets dets-1">
         <div><h1 class="details-h1">${i.name}</h1></div>
@@ -142,7 +142,7 @@ detail.addEventListener('click', e => {
     
     <div class="dets-0">
     <button onclick="clearDetail(),getAllCountries()" id="btn">Back</button>
-    <img class="dets-img" src="${i.flag}">
+    <img alt="${i.name} Flag" class="dets-img" src="${i.flag}">
     </div>
     <div class="dets dets-1">
     <div><h1 class="details-h1">${i.name}</h1></div>
@@ -182,7 +182,6 @@ getAllCountries();
 
 searchIcon.addEventListener('click', searchCountry);
 region.addEventListener('change', getByRegion);
-
 
 
 
